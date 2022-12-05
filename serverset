@@ -44,7 +44,9 @@ echo -e "$GREEN wsgi server collected successfully ---------\n $NC"
 
 echo -e " $GREEN installing .............\n $NC"
 
-sudo bash wsgi_server_setup/setup.sh
+cd wsgi_server_setup || exit
+
+bash setup.sh
 
 
 
