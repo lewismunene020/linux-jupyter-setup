@@ -1,0 +1,74 @@
+#!/bin/bash
+
+GREEN='\033[1;32m'
+# RED='\033[1;31m'
+
+apt-get  upgrade && apt-get update
+
+sudo apt install mysql-server
+sudo apt-get install -y phpmyadmin
+apt install python3-pip
+apt install python3-virtualenv
+##transport modules
+sudo apt update && sudo apt upgrade -y
+sudo apt install software-properties-common apt-transport-https -y
+## php8.1-fpm modules setup
+sudo apt install php8.1-fpm php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-intl php8.1-bcmath
+
+#zsh shell
+apt  install zsh
+##setting  up github login
+apt  install gh
+##certbot  installation
+apt  install certbot
+sudo apt install certbot python3-certbot-nginx
+# installing  pip 
+apt  install python3-pip
+# installing  virtualenv
+apt  install python3-virtualenv
+# installing  nginx
+apt  install nginx
+# installing  mysql
+apt  install mysql-server
+
+# collecting  wsgi server  setup
+echo -e " $GREEN collecting  wsgi server  setup\n"
+
+git clone https://github.com/lewismunene020/wsgi_server_setup.git
+
+echo -e "$GREEN wsgi server collected successfully ---------\n"
+
+echo -e " $GREEN installing .............\n"
+
+sudo bash wsgi_server_setup/setup.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
