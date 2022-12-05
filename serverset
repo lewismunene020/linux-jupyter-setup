@@ -2,6 +2,7 @@
 
 GREEN='\033[1;32m'
 # RED='\033[1;31m'
+NC='\033[0m' # No Color
 
 apt-get  upgrade && apt-get update
 
@@ -31,14 +32,17 @@ apt  install nginx
 # installing  mysql
 apt  install mysql-server
 
+# installing  trash cli
+apt install trash-cli 
+
 # collecting  wsgi server  setup
-echo -e " $GREEN collecting  wsgi server  setup\n"
+echo -e " $GREEN collecting  wsgi server  setup\n $NC"
 
 git clone https://github.com/lewismunene020/wsgi_server_setup.git
 
-echo -e "$GREEN wsgi server collected successfully ---------\n"
+echo -e "$GREEN wsgi server collected successfully ---------\n $NC"
 
-echo -e " $GREEN installing .............\n"
+echo -e " $GREEN installing .............\n $NC"
 
 sudo bash wsgi_server_setup/setup.sh
 
