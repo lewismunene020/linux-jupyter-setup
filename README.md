@@ -8,7 +8,7 @@ clone  this reposititory then  :
 ```
 git clone https://github.com/lewismunene020/serverSet.git
 
-bash serverset
+bash serverSet/serverset
 
 ```
 
