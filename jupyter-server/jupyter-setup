@@ -1,0 +1,34 @@
+#!/bin/bash
+
+virtualenv .venv 
+
+source .venv/bin/activate
+
+sudo  apt  install  jupyter-core
+
+pip install  jupyter 
+
+
+# setting up jupyter notebook config file
+jupyter notebook --generate-config
+cd ~/.jupyter || exit
+
+# allowing  jupyter remote access
+nano jupyter_notebook_config.py
+
+
+
+
+
+# setting up password
+jupyter notebook password
+
+
+
+
+
+echo "jupyter installed successfully"
+
+# jupyter notebook --port 10000
+
+

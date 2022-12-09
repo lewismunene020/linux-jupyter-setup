@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+# jupyter notebook --no-browser --port=10000
+
+# allowing jupyter to load on boot   loading  after boot
+# echo "
+# jupyter notebook --config=/home/lewis/.jupyter/jupyter_notebook_config.py  --port=10000" >> ~/.bashrc 
+
+jupyter notebook --config=/home/lewis/.jupyter/jupyter_notebook_config.py  --port=10000
+
+# ssh -L 8080:localhost:10000 lewis@170.187.182.247
+
+
+# setthe  jupyter  notebook  to  load  on  boot
+# echo "screen /home/lewis/<folder>/jupyter-run" >> ~/.bashrc
+
+
+jupyter notebook --config=/home/lewis/.jupyter/jupyter_notebook_config.py  --port=10000
+
