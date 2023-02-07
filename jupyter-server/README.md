@@ -18,6 +18,18 @@ cd ~/.jupyter || exit
 
 ```
 
+# Setting  up password  to login to jupyter  notebook 
+```
+jupyter notebook password
+
+# output
+
+Enter password: 
+Verify password: 
+[NotebookPasswordApp] Wrote hashed password to /home/<folder>/.jupyter/jupyter_notebook_config.json
+
+```
+
 # running a jupyter server 
 ```
   jupyter notebook  --port='enter your  port here'
@@ -52,17 +64,7 @@ c.NotebookApp.ip = '*'
 c.NotebookApp.allow_root = True
 ```
 
-# Setting  up password 
-```
-jupyter notebook password
 
-# output
-
-Enter password: 
-Verify password: 
-[NotebookPasswordApp] Wrote hashed password to /home/<folder>/.jupyter/jupyter_notebook_config.json
-
-```
 # Setting Jupyter to  load on boot
 
 ```
