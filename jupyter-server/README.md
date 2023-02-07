@@ -18,6 +18,13 @@ cd ~/.jupyter || exit
 
 ```
 
+# running a jupyter server 
+```
+  jupyter notebook  --port='enter your  port here'
+  
+```
+
+
 # Allow remote connections
 
 ```
